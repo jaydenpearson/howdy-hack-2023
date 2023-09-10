@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    overflow-x:hidden;
+}
+.custom-bg {
+    background-color: #500; /* Your custom background color */
+    color: #ffffff; /* Text color for contrast */
+    text-align: center;
+}
+
+h2, p {
+    padding: 1rem;
+}
+p {
+    padding-top:0;
+}
+
+#myIframe {
+    width: 200px; /* Width of the cropped segment */
+    height: 300px; /* Height of the cropped segment */
+    position: relative;
+    overflow: hidden;
+    margin-top: 160px;
+    margin-left: 200px;
+}
+#myIframe{
+    content: "";
+    position: absolute;
+    top: 0;    left: 0;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    background: white; /* Fill the cropped area with the desired background color */
+    clip: rect(150px,1500px, 750px, 50px); /* Define the cropping rectangle (top, right, bottom, left) */
+}
+
+table {
+    margin-top: 725px;
+}
+
+.button {
+    background-color: #500000; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 2px;
+  }
